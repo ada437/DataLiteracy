@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 00:38:51 2019
+
+@author: anna_amato
+"""
+/* Custom App CSS Below --------------------------------- */
+/*Fonts ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Main Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+#body {
+  margin: 0;
+  padding: 0;
+}
+h1{ font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  font-size: 36px;
+  padding-left: 12px;
+  color: #ffa500;
+} 
+
+h2{ font-family: sans-serif;
+  letter-spacing: 2.1px;
+  font-size: 36px;
+  padding-left: 12px;
+  color: #26879b;
+}
+
+h3{
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  font-size: 18px;
+  padding-left: 12px;
+  color: #27c9ff;
+}
+
+h4, h5 {
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-top: 12px;
+  color: #a3da00;
+}
+p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 12px;
+}
+.text-padding{
+  padding: 5px;
+}
+.dropdown{
+  padding-top: 12px;
+  padding-bottom: 6px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 12px;
+  width: 200px;
+  color: #a3da00;
+}
+.intro{
+  font-family: sans-serif;
+  color: #26879b;
+  letter-spacing: 2.1px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-bottom: 6px;
+}
+#cytoscape-images {
+  font-size: 12px;
+  display: inline-block;
+}
+ Div{
+  fluid: 'True';
+  display: 'inline';
+} 
+.bar{
+  width: 100%;
+}
+.navbar {
+  color: #26879b;
+  font-family: sans-serif;
+}
+#output-image-upload {
+  width: 500px;
+  height: 200px;
+}
+#input {
+  margin: 10px;
+}
+#upload-image {
+line-height: 60px;
+border-width: 1px;
+border-style: dashed;
+border-radius: 5px;
+text-align: center;
+margin: 10px;
+}

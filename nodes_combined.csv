@@ -1,0 +1,25 @@
+,author_id,posts,thread_started,subthread_started,comment_count,thread_initiatior,image,Role,degree,betweeness,authority,eigenvector,betweenessNorm,degreeNorm,postsNorm
+1,A,41,0,7,34,Initiator,images/avatar1.png,Research,12,61.16666667,1.524168848,31.71116928,27.08487085,32,26.89655172
+2,BM,53,4,13,36,Initiator,images/avatar2.png,Math,13,29.66666667,40,30.13465442,13.13653137,34.66666667,35.17241379
+3,C,35,5,4,26,Initiator,images/avatar3.png,Research,10,14.16666667,1.642666293,23.50503089,6.273062731,26.66666667,22.75862069
+4,EM,25,0,8,17,Initiator,images/avatar4.png,Math,9,6.333333333,1.590504676,22.84058391,2.804428044,24,15.86206897
+5,H,59,2,5,52,Initiator,images/avatar5.png,Math,10,18,17.31153914,26.89204873,7.970479705,26.66666667,39.31034483
+6,K,11,0,2,9,Initiator,images/avatar6.png,Research,4,1.666666667,0.551380097,15.93893195,0.73800738,10.66666667,6.206896552
+7,KB,12,1,2,9,Initiator,images/avatar7.png,Art,5,0.666666667,8.71262685,16.3774036,0.295202952,13.33333333,6.896551724
+8,M,33,2,9,22,Initiator,images/avatar8.png,Research,15,90.33333333,14.78877145,40,40,40,21.37931034
+9,MK,31,3,12,16,Initiator,images/avatar9.png,Art,9,24,0.50855236,16.73461366,10.62730627,24,20
+10,R ,2,0,1,1,Initiator,images/avatar10.png,Research,0,0,0,0,0,0,0
+11,Cats,8,6,5,2,Initiator,images/avatar1.png,Poster,1,0,0.080440765,2.108351351,0,2.666666667,4.137931034
+12,ChrisJordan,23,5,4,18,Initiator,images/avatar1.png,Poster,2,0,0.34173275,6.95654842,0,5.333333333,14.48275862
+13,Clock ,18,3,2,15,Initiator,images/avatar1.png,Poster,0,0,0,0,0,0,11.03448276
+14,DearData,20,5,4,15,Initiator,images/avatar1.png,Poster,1,0,2.611706183,3.796588356,0,2.666666667,12.4137931
+15,DigitalDataInstallation,19,6,5,13,Initiator,images/avatar1.png,Poster,2,0,0.317732546,6.872836438,0,5.333333333,11.72413793
+16,Faces,21,5,4,16,Initiator,images/avatar1.png,Poster,1,0,1.958779638,3.796588356,0,2.666666667,13.10344828
+17,Flags ,23,6,5,17,Initiator,images/avatar1.png,Poster,2,0,2.510159735,8.836086473,0,5.333333333,14.48275862
+18,FoodSecurity ,19,3,2,16,Initiator,images/avatar1.png,Poster,1,0,0.551380097,5.039498117,0,2.666666667,11.72413793
+19,Music ,15,7,6,8,Initiator,images/avatar1.png,Poster,1,0,0.053627176,2.108351351,0,2.666666667,8.965517241
+20,PlasticBottles,28,5,4,23,Initiator,images/avatar1.png,Poster,1,0,1.969454047,3.388060724,0,2.666666667,17.93103448
+21,Reflection,3,3,0,0,Initiator,images/avatar1.png,Poster,1,0,0.278433136,2.961338973,0,2.666666667,0.689655172
+22,Shakespeare,60,13,11,47,Initiator,images/avatar1.png,Poster,3,0,5.844320391,10.14598805,0,8,40
+23,TallyMarks,29,8,7,21,Initiator,images/avatar1.png,Poster,2,0,0.934818071,7.917125107,0,5.333333333,18.62068966
+24,TrafficPatterns,16,5,4,11,Initiator,images/avatar1.png,Poster,1,0,0.040220382,2.108351351,0,2.666666667,9.655172414
