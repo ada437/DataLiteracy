@@ -26,7 +26,7 @@ meta_tags=[
 server = app.server
 
 nodes = pd.read_csv("nodes_combined.csv")
-edges = pd.read_csv("weightedlinks2.csv")
+edges = pd.read_csv("weightedlinks2Norm.csv")
 
 
 # Creating elements
@@ -104,12 +104,12 @@ stylesheet = [
         'style': {
             'curve-style': 'bezier',
             'haystack-radius': 0,
-            #'width': 'data(weight)',
-            'opacity': 'data(weightNorm)',
+    
+            'opacity':'data(weightNorm)',
             'line-color': '#006ad1',
             'target-arrow-shape':'vee',
             'target-arrow-scale': 1,
-            'target-arrow-color':'#1e90ff',
+            'target-arrow-color':'#1e90ff'
         }
     }, 
 
@@ -272,14 +272,15 @@ def update_stylesheet(line_color, bg_color, update_weight, centrality):
             'selector': line_color,
             'style': {
                 'line-color': '#ffa500',
-                  'opacity': '.6'
+                  'target-arrow-color':'#ffa500'
             }
         },
             {
             'selector': update_weight,
             'style': {
                 'line-color': '#92269b',
-                'opacity': '.6'
+                'target-arrow-color':'#92269b'
+                
             }
         }, 
             
