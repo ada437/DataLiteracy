@@ -167,13 +167,13 @@ body = dbc.Container(
                                                 for name in ['[Role *= "R"]' , '[Role *= "M"]', '[Role *= "A"]', '[Role *= "P"]']])
                                 ]),
                                 html.Div(className='dropdown', children=[
-                                        'Centrality:',
+                                        'Characterstics:',
                                         dcc.Dropdown(id='centrality', className='dropdown', clearable=True, options=[
                                                 { 'label': name, 'value': name}
                                                 for name in ['data(Connectedness)' , 'data(Moderators)', 'data(influence)', 'data(Contributions)']])
                                 ]),
                                 html.Div(className='dropdown', children=[ 
-                                        'Number of Utterances:',
+                                        'Number of Contributions:',
                                 dcc.Dropdown(
                                         id='dropdown-update-weight',
                                         className= 'dropdown',
@@ -187,7 +187,7 @@ body = dbc.Container(
                                         placeholder = "select number")
                                 ]), 
                                 html.Div(className='dropdown', children=[
-                                        'Type of Dialogue:',
+                                        'Type of Contribution:',
                                         dcc.Dropdown(id='input-line-color', className='dropdown', clearable=True, options=[
                                                 {'label': name, 'value': name}
                                                 for name in ['[Reasoning > 0]', '[Reasoning > 1]', 
