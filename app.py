@@ -163,14 +163,14 @@ body = dbc.Container(
                                 html.Div(className='dropdown', children=[
                                         'Role:',
                                         dcc.Dropdown(id='input-bg-color', className='dropdown', clearable=True, options=[
-                                                { 'label': name, 'value': name}
-                                                for name in ['[Role *= "R"]' , '[Role *= "M"]', '[Role *= "A"]', '[Role *= "P"]']])
+                                                { 'label': 'Math', 'value': '[Role *= "M"]'}, { 'label': 'Research', 'value': '[Role *= "R"]'}, { 'label': 'Art', 'value': '[Role *= "A"]'}, { 'label': 'Poster', 'value': '[Role *= "P"]'}
+                                                ])
                                 ]),
                                 html.Div(className='dropdown', children=[
                                         'Characterstics:',
                                         dcc.Dropdown(id='centrality', className='dropdown', clearable=True, options=[
-                                                { 'label': name, 'value': name}
-                                                for name in ['data(Connectedness)' , 'data(Moderators)', 'data(influence)', 'data(Contributions)']])
+                                                { 'label': "Connectedness", 'value': 'data(Connectedness)'}, { 'label': 'Moderators', 'value':'data(Moderators)'}, { 'label': 'Influencers', 'value': 'data(influence)'}, { 'label': 'Contributions', 'value': 'data(Contributions)'}
+                                            ])
                                 ]),
                                 html.Div(className='dropdown', children=[ 
                                         'Number of Contributions:',
@@ -181,20 +181,18 @@ body = dbc.Container(
                                         value='weight > 2',
                                         clearable=True,
                                         options=[
-                                                {'label': name, 'value': name}
-                                                for name in ['[weight < 3]', '[weight > 6]']
+                                                {'label': 'low', 'value': '[weight < 3]'}, { 'label': 'high', 'value': '[weight >6]'}
                                                 ], 
                                         placeholder = "select number")
                                 ]), 
                                 html.Div(className='dropdown', children=[
                                         'Type of Contribution:',
                                         dcc.Dropdown(id='input-line-color', className='dropdown', clearable=True, options=[
-                                                {'label': name, 'value': name}
-                                                for name in ['[Reasoning > 0]', 
-                                                             '[Reflection > 0]', '[Clarification > 0]','[Elaboration > 0]',
-                                                             ]
+                                                {'label': 'Reasoning', 'value': '[Reasoning > 0]'}, {'label': 'Reflection', 'value': '[Reflection > 0]'}, {'label': 'Clarification', 'value': '[Clarification > 0]'}, {'label': 'Elaboration', 'value': '[Elaboration > 0]'}
+                                            
+                                                             ])
                                                 ])
-                                ]),
+                                ,
                                 html.Div(className='dropdown', children= [
                                         html.P(id='cytoscape-mouseoverNodeData-output'),
                                         html.P(id='cytoscape-mouseoverEdgeData-output')
