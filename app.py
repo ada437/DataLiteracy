@@ -194,7 +194,12 @@ body = dbc.Container(
                                                              '[Reflection > 2]', '[Clarification > 2]','[Elaboration > 2]',
                                                              '[Alternative > 2]','[Consensus > 2]']
                                                 ])
-                                ])
+                                ]),
+                                html.Div(className='dropdown', children= [
+                                        html.P(id='cytoscape-mouseoverNodeData-output'),
+                                        html.P(id='cytoscape-mouseoverEdgeData-output')
+                                        
+                                        ])
                                 
                                 
                     ],
@@ -209,9 +214,10 @@ body = dbc.Container(
                                         style={'width': '100%', 'height': '500px'},
                                         stylesheet=stylesheet,
                                         elements=nodes + edges
-                                        ), 
-                                        html.P(id='cytoscape-mouseoverNodeData-output'),
-                                        html.P(id='cytoscape-mouseoverEdgeData-output')
+                                        )
+#                                , 
+#                                        html.P(id='cytoscape-mouseoverNodeData-output'),
+#                                        html.P(id='cytoscape-mouseoverEdgeData-output')
                                         ])
                                 ]),
                     ]
