@@ -104,3 +104,27 @@ border-radius: 5px;
 text-align: center;
 margin: 10px;
 }
+#cytoscape-mouseoverNodeData-output {
+  font-family: sans-serif;
+  color: #26879b;
+  font-size: 14px;
+  line-height: 40px;
+border-width: 1px;
+border-style: dashed;
+border-radius: 5px;
+text-align: center;
+margin: 10px;
+
+}
+#cytoscape-mouseoverEdgeData-output {
+  font-family: sans-serif;
+  color: #26879b;
+  font-size: 14px;
+  line-height:40px;
+border-width: 1px;
+border-style: dashed;
+border-radius: 5px;
+text-align: center;
+margin: 10px;
+
+}
