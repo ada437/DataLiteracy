@@ -190,9 +190,9 @@ body = dbc.Container(
                                         'Type of Contribution:',
                                         dcc.Dropdown(id='input-line-color', className='dropdown', clearable=True, options=[
                                                 {'label': name, 'value': name}
-                                                for name in ['[Reasoning > 0]', '[Reasoning > 1]', 
-                                                             '[Reflection > 2]', '[Clarification > 2]','[Elaboration > 2]',
-                                                             '[Alternative > 2]','[Consensus > 2]']
+                                                for name in ['[Reasoning > 0]', 
+                                                             '[Reflection > 0]', '[Clarification > 0]','[Elaboration > 0]',
+                                                             ]
                                                 ])
                                 ]),
                                 html.Div(className='dropdown', children= [
