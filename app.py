@@ -36,17 +36,17 @@ for index,row in nodes.iterrows():
     name=row["author_id"]
     size=row["posts"]
     Role=row["Role"]
-    degreeNorm=row["degreeNorm"]
-    postsNorm=row["postsNorm"]
-    betweenessNorm=row["betweenessNorm"]
-    eigenvector=row["eigenvector"]
+    Connectedness=row["degreeNorm"]
+    Contributions=row["postsNorm"]
+    Moderators=row["betweenessNorm"]
+    influence=row["eigenvector"]
     
-    data.append([name,image, size, Role, degreeNorm, postsNorm, betweenessNorm, eigenvector])
+    data.append([name,image, size, Role, Connectedness, Contributions, Moderators, influence])
 
 nodes = [
     { 'data': {'id': name, 'label': name.capitalize(), 'url': image, 'size':size, 'Role': Role,
-               'degreeNorm':degreeNorm, 'postsNorm':postsNorm, 'betweenessNorm':betweenessNorm,
-               'eigenvector':eigenvector
+               'Connectedness':degreeNorm, 'Contributions':postsNorm, 'Moderators':betweenessNorm,
+               'influence':eigenvector
                }}
     for name, image, size, Role, degreeNorm, postsNorm, betweenessNorm, eigenvector in data
 ]
@@ -90,8 +90,8 @@ stylesheet = [
        'selector': 'node',
         'style': {
             #'content': 'data(label)',
-            'width': 'data(postsNorm)',
-            'height': 'data(postsNorm)',
+            'width': 'data(Contributions)',
+            'height': 'data(Contributions)',
             'font-size':7,
             'font-family': 'sans-serif',
             'background-color':'#1e90ff'
@@ -170,7 +170,7 @@ body = dbc.Container(
                                         'Centrality:',
                                         dcc.Dropdown(id='centrality', className='dropdown', clearable=True, options=[
                                                 { 'label': name, 'value': name}
-                                                for name in ['data(degreeNorm)' , 'data(betweenessNorm)', 'data(eigenvector)', 'data(postsNorm)']])
+                                                for name in ['data(Connectedness)' , 'data(Moderators)', 'data(influence)', 'data(Contributions)']])
                                 ]),
                                 html.Div(className='dropdown', children=[ 
                                         'Number of Utterances:',
