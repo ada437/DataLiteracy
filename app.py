@@ -210,7 +210,8 @@ body = dbc.Container(
                                         stylesheet=stylesheet,
                                         elements=nodes + edges
                                         ), 
-                                        html.P(id='cytoscape-tapNodeData-output')
+                                        html.P(id='cytoscape-mouseoverNodeData-output'),
+                                        html.P(id='cytoscape-mouseoverEdgeData-output')
                                         ])
                                 ]),
                     ]
@@ -224,6 +225,19 @@ body = dbc.Container(
 ################ Declare app layout
 app.layout = html.Div(children= [navbar, body])  
 
+####tapnode callbacks 
+@app.callback(Output('cytoscape-mouseoverNodeData-output', 'children'),
+             [Input('cytoscape-images', 'mouseoverNodeData')])
+def displayTapNodeData(data):
+    if data:
+        return data['Role'] + " " + data['label'] + " had " + str(data['size']) + " interactions." 
+
+
+@app.callback(Output('cytoscape-mouseoverEdgeData-output', 'children'),
+             [Input('cytoscape-images', 'mouseoverEdgeData')])
+def displayTapEdgeData(data):
+    if data:
+        return data['source'] + " had " + str(data['weight']) + " contributions to " + data['target'] 
         
 ##########styles callback 
 @app.callback(Output('cytoscape-images', 'stylesheet'), 
