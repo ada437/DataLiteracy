@@ -167,7 +167,7 @@ body = dbc.Container(
                                                 ])
                                 ]),
                                 html.Div(className='dropdown', children=[
-                                        'Characterstics:',
+                                        'Characteristics:',
                                         dcc.Dropdown(id='centrality', className='dropdown', clearable=True, options=[
                                                 { 'label': "Connectedness", 'value': 'data(Connectedness)'}, { 'label': 'Moderators', 'value':'data(Moderators)'}, { 'label': 'Influencers', 'value': 'data(influence)'}, { 'label': 'Contributions', 'value': 'data(Contributions)'}
                                             ])
